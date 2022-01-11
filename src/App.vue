@@ -1,30 +1,59 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="relative flex flex-col h-screen md:px-4 sm:py-2 lg:px-10 md:py-10 text-white">
+    <Nav />
+    <router-view v-slot="{ Component }">
+      <transition name="main-router-anim">
+        <component :is="Component" :key="$route.fullPath" />
+      </transition>
+    </router-view>
   </div>
-  <router-view/>
 </template>
 
+<script>
+// @ is an alias to /src
+import Nav from '@/components/Nav.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Nav
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-#nav {
-  padding: 30px;
-}
+  .main-router-anim-enter-active {
+  animation: pagecome .8s;
+  animation-delay: .8s;
+  opacity: 0;
+  }
+  .main-router-anim-leave-active {
+  animation: pagego .6s;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  @keyframes pagego {
+  from {
+      transform: translatex(0);
+  }
+  to {
+      transform: translatex(-250px);
+      opacity: 0;
+  }
+  }
+  @keyframes pagecome {
+  from {
+      transform: translatex(350px);
+      opacity: 0;
+  }
+  to {
+      transform: translatex(0);
+      opacity: 1;
+  }
+  }
 </style>
