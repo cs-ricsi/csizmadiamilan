@@ -1,5 +1,6 @@
 <template>
-  <div class="relative flex flex-col h-screen md:px-4 sm:py-2 lg:px-10 md:py-10 text-white">
+  <div class="relative flex flex-col h-screen text-white scroll-smooth"
+    :class="{'overflow-hidden': this.$route.meta.overflowHidden}">
     <Nav />
     <router-view v-slot="{ Component }">
       <transition name="main-router-anim">
@@ -17,6 +18,19 @@ export default {
   name: 'App',
   components: {
     Nav
+  },
+  created () {
+    this.setTitle(this.$route.meta.title)
+  },
+  watch: {
+    $route (to, from) {
+      this.setTitle(to.meta.title)
+    }
+  },
+  methods: {
+    setTitle (value) {
+      document.title = value ? 'Milan Csizmadia | ' + value : 'Milan Csizmadia'
+    }
   }
 }
 </script>

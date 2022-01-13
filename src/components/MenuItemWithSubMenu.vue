@@ -1,17 +1,17 @@
 <template>
     <div @click="openMenu" @mouseenter="openMenu" @mouseleave="closeMenu"
         class="relative font-himalaya text-white mx-2 py-2 md:mx-4 border-b border-transparent hover:border-white transition-all lowercase"
-        :class="{'border-white': this.$route.name === this.routeName }">
+        :class="{'border-white': this.$route.meta.subMenuOf === this.routeName }">
         {{ routeName }}
         <transition name="main-router-anim">
             <div v-if="showSubMenu" class="absolute text-white w-full h-auto flex flex-col items-end">
-                <router-link :to="'/about'" class="opacity-70 hover:opacity-100 mt-2 py-1">
+                <router-link :to="'/photography/automotive'" class="opacity-70 hover:opacity-100 mt-2 py-1">
                     automotive
                 </router-link>
-                <router-link :to="'/about'" class="opacity-70 hover:opacity-100 py-1">
+                <router-link :to="'/photography/portrait'" class="opacity-70 hover:opacity-100 py-1">
                     portrait
                 </router-link>
-                <router-link :to="'/about'" class="opacity-70 hover:opacity-100 py-1">
+                <router-link :to="'/photography/sports'" class="opacity-70 hover:opacity-100 py-1">
                     sports
                 </router-link>
             </div>

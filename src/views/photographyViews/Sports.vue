@@ -1,11 +1,11 @@
 <template>
-    <h1>This is an Photography page</h1>
+    <h1>sports</h1>
 </template>
 
 <script>
 
 export default {
-  name: 'Photography',
+  name: 'Sports',
   components: {
   }
 }
