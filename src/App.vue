@@ -24,6 +24,7 @@ export default {
   },
   watch: {
     $route (to, from) {
+      console.log(to)
       this.setTitle(to.meta.title)
     }
   },
@@ -35,7 +36,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -54,6 +55,7 @@ export default {
   @keyframes pagego {
   from {
       transform: translatex(0);
+      opacity: 1;
   }
   to {
       transform: translatex(-250px);

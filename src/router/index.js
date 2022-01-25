@@ -20,7 +20,7 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import('../views/Contact.vue'),
+    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
     meta: { title: 'Contact' }
   },
   // {
@@ -36,31 +36,32 @@ const routes = [
   {
     path: '/photography/automotive',
     name: 'Automotive',
-    component: () => import('../views/photographyViews/Automotive.vue'),
+    component: () => import(/* webpackChunkName: "automotive" */ '../views/photographyViews/Automotive.vue'),
     meta: { title: 'Automotive', subMenuOf: 'Photography' }
   },
   {
-    path: '/photography/portrait',
-    name: 'Portrait',
-    component: () => import('../views/photographyViews/Portrait.vue'),
-    meta: { title: 'Portrait', subMenuOf: 'Photography' }
+    path: '/photography/portrait-lifestyle',
+    name: 'Portrait/Lifestyle',
+    component: () => import(/* webpackChunkName: "portrait-lifestyle" */ '../views/photographyViews/Portrait.vue'),
+    meta: { title: 'Portrait/Lifestyle', subMenuOf: 'Photography' }
   },
   {
     path: '/photography/sports',
     name: 'Sports',
-    component: () => import('../views/photographyViews/Sports.vue'),
+    component: () => import(/* webpackChunkName: "sports" */ '../views/photographyViews/Sports.vue'),
     meta: { title: 'Sports', subMenuOf: 'Photography' }
   },
   {
     path: '/videography',
     name: 'Videography',
-    component: () => import('../views/Videography.vue'),
+    component: () => import(/* webpackChunkName: "videography" */'../views/Videography.vue'),
     meta: { title: 'Videography' }
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  duplicateNavigationPolicy: 'ignore',
   routes
 })
 

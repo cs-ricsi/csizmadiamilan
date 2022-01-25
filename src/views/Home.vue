@@ -4,7 +4,9 @@
       <source src="../assets/videos/vidi.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video> -->
-    <img class="absolute inset-0 object-contain h-auto w-full" src="../assets/photos/DSC03549.jpg" alt="">
+    <img class="absolute inset-0 object-cover h-screen w-full"
+      src="../assets/photos/automotive/milan-csizmadia-photography-videography-automotive-motorsport-racing-lifestyle-sports-budapest-hungary-europe-worldwide-ferrari-red-sportscar-hypercar-trackday-milancsizmadia-2.jpg"
+      alt="">
   <!-- </div> -->
 </template>
 

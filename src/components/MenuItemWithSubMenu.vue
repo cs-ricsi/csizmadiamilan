@@ -1,15 +1,15 @@
 <template>
-    <div @click="openMenu" @mouseenter="openMenu" @mouseleave="closeMenu"
+    <div @click="toggleMenu" @mouseleave="closeMenu"
         class="relative font-himalaya text-white mx-2 py-2 md:mx-4 border-b border-transparent hover:border-white transition-all lowercase"
-        :class="{'border-white': this.$route.meta.subMenuOf === this.routeName }">
+        :class="{'': this.$route.meta.subMenuOf === this.routeName }">
         {{ routeName }}
         <transition name="main-router-anim">
-            <div v-if="showSubMenu" class="absolute text-white w-full h-auto flex flex-col items-end">
+            <div v-if="showSubMenu" class="absolute text-white w-auto h-auto flex flex-col items-end">
                 <router-link :to="'/photography/automotive'" class="opacity-70 hover:opacity-100 mt-2 py-1">
                     automotive
                 </router-link>
-                <router-link :to="'/photography/portrait'" class="opacity-70 hover:opacity-100 py-1">
-                    portrait
+                <router-link :to="'/photography/portrait-lifestyle'" class="opacity-70 hover:opacity-100 py-1">
+                    portrait / lifestyle
                 </router-link>
                 <router-link :to="'/photography/sports'" class="opacity-70 hover:opacity-100 py-1">
                     sports
@@ -30,8 +30,8 @@ export default {
     }
   },
   methods: {
-    openMenu () {
-      this.showSubMenu = true
+    toggleMenu () {
+      this.showSubMenu = !this.showSubMenu
     },
     closeMenu () {
       this.showSubMenu = false
