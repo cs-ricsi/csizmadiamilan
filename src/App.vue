@@ -24,7 +24,6 @@ export default {
   },
   watch: {
     $route (to, from) {
-      console.log(to)
       this.setTitle(to.meta.title)
     }
   },
@@ -44,8 +43,8 @@ export default {
   }
 
   .main-router-anim-enter-active {
-  animation: pagecome .8s;
-  animation-delay: .8s;
+  animation: pagecome .6s;
+  animation-delay: .6s;
   opacity: 0;
   }
   .main-router-anim-leave-active {
