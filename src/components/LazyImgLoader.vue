@@ -3,9 +3,7 @@
         :class="imgClass"
         :src="imgSrc"
         :alt="imgAlt"
-        :intersection-options="lazyImgOptions"
-        @intersect="intersect($event)"
-        @load="setLoaded($event)" />
+        :intersection-options="lazyImgOptions"/>
 </template>
 
 <script>
@@ -28,20 +26,6 @@ export default {
     },
     imgSrc: String,
     imgAlt: String
-  },
-  data () {
-    return {
-      loaded: false
-    }
-  },
-  methods: {
-    setLoaded (e) {
-      console.log(e)
-      this.loaded = true
-    },
-    intersect (e) {
-      console.log(e)
-    }
   }
 }
 </script>

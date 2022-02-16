@@ -1,6 +1,6 @@
 <template>
   <transition name="menu-from-top" mode="out-in">
-    <img v-if="showMobileMenu" class="md:hidden fixed inset-0 object-cover h-screen w-full z-10 transition-all overflow-y-hidden"
+    <img v-if="showMobileMenu" class="md:hidden fixed inset-0 object-cover h-screen w-full z-20 transition-all overflow-y-hidden"
       src="../assets/photos/HAMBURGER_háttér.png"
       alt="">
   </transition>

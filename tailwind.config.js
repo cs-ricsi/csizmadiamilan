@@ -21,6 +21,12 @@ module.exports = {
         'seventy': '70vh',
         'eighty': '80vh',
         'ninety': '90vh'
+      },
+      maxHeight: {
+        'fifty': '50vh',
+      },
+      backgroundImage: {
+        'about-bg': 'url("../assets/photos/about/BACKGROUND.jpg")'
       }
     }
   },
