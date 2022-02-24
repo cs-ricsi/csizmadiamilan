@@ -51,6 +51,7 @@ export default {
 </script>
 
 <style scoped>
+
   .main-router-anim-enter-active {
   animation: pagecome .5s ease-in-out;
   opacity: 0;

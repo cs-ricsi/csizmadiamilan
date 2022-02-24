@@ -8,12 +8,12 @@
     :class="{ 'text-white fade-bg': !showMobileMenu, 'text-black': showMobileMenu }">
     <div class="flex">
       <router-link to="/" class="transition duration-600 ease-in-out">
-        <div class="flex-col flex-1 flex-no-wrap font-anton justify-start transition-all">
-          <p class="text-2xl md:text-3xl lg:text-5xl pr-2">MILAN</p>
-          <p class="text-2xl md:text-3xl lg:text-5xl">CSIZMADIA</p>
+        <div class="flex-col flex-1 flex-no-wrap font-anton justify-start transition-all mx-2 md:mx-4">
+          <p class="text-xl md:text-2xl lg:text-3xl pr-2">MILAN</p>
+          <p class="text-xl md:text-2xl lg:text-3xl">CSIZMADIA</p>
         </div>
       </router-link>
-      <div class="hidden md:flex flex-1 justify-end items-center text-lg">
+      <div class="hidden md:flex flex-1 justify-end items-center text-xl">
         <MenuItemWithSubMenu :routeName='"Photography"'/>
         <MenuItem :routerTo='"/about"' :routeName='"About"'/>
         <MenuItem :routerTo='"/contact"' :routeName='"Contact"'/>
@@ -43,17 +43,17 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <MenuItem :routerTo='"/about"' :routeName='"About"'/>
-              <MenuItem :routerTo='"/contact"' :routeName='"Contact"'/>
+              <MenuItem :showUnderline="false" :routerTo='"/about"' :routeName='"About"'/>
+              <MenuItem :showUnderline="false" :routerTo='"/contact"' :routeName='"Contact"'/>
             </div>
             <div class="flex-1">
             </div>
           </div>
           <div v-else class="flex flex-col h-full">
             <div class="flex-1 flex flex-col justify-end items-center h-full">
-              <MenuItem :routerTo='"/photography/automotive"' :routeName='"automotive"'/>
-              <MenuItem :routerTo='"/photography/portrait-lifestyle"' :routeName='"portrait / lifestyle"'/>
-              <MenuItem :routerTo='"/photography/sports"' :routeName='"sports"'/>
+              <MenuItem :showUnderline="false" :routerTo='"/photography/automotive"' :routeName='"automotive"'/>
+              <MenuItem :showUnderline="false" :routerTo='"/photography/portrait-lifestyle"' :routeName='"portrait / lifestyle"'/>
+              <MenuItem :showUnderline="false" :routerTo='"/photography/sports"' :routeName='"sports"'/>
             </div>
             <div class="flex-1 flex justify-center items-center">
               <div @click="showSubmenu = false" class="font-himalaya text-2xl text-white mx-2 py-2 mt-16 md:mx-4 md:border-b border-transparent hover:border-white lowercase cursor-pointer">

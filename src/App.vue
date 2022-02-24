@@ -44,6 +44,18 @@ export default {
     -moz-osx-font-smoothing: grayscale;
   }
 
+  @font-face {
+    font-family: "anton";
+    src: url("./assets/fonts/Anton-Regular.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "himalaya";
+    src: url("./assets/fonts/himalaya.ttf");
+    font-display: swap;
+  }
+
   .main-router-anim-enter-active {
   animation: pagecome .6s ease-in-out;
   }

@@ -1,8 +1,8 @@
 <template>
   <router-link :to="routerTo" @mouseenter="mouseOn = true" @mouseleave="mouseOn = false"
-    class="relative font-himalaya mx-2 py-2 md:mx-4 lowercase">
+    class="relative font-himalaya mx-2 py-1 lg:py-2 md:mx-4 lowercase text-inherit hover:text-inherit active:text-inherit focus:text-inherit">
     {{ routeName }}
-    <MenuUnderline :menu="routeName" :hover="mouseOn"/>
+    <MenuUnderline v-show="showUnderline" :menu="routeName" :hover="mouseOn"/>
   </router-link>
 </template>
 
@@ -16,11 +16,20 @@ export default {
   },
   props: {
     routerTo: String,
-    routeName: String
+    routeName: String,
+    showUnderline: {
+      type: Boolean,
+      default: true
+    }
   },
   data () {
     return {
       mouseOn: false
+    }
+  },
+  watch: {
+    $route (to, from) {
+      this.mouseOn = false
     }
   }
 }

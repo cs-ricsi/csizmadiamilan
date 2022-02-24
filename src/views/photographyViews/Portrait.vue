@@ -4,7 +4,7 @@
     <img class="absolute inset-0 object-cover min-h-screen h-auto w-full"
       src="../../assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-sunglasses-worldwide-classy-woman.jpg"
       alt="">
-    <div class="relative h-fifty md:h-seventy lg:h-screen mb-72 md:mb-48 lg:mb-20"></div>
+    <div class="relative h-fifty md:h-seventy lg:h-screen mb-32 md:mb-20 lg:mb-20"></div>
     <div class="relative">
       <section class="pb-2 md:pb-4 lg:pb-8">
         <div class="relative w-full h-auto">
