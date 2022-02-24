@@ -19,12 +19,12 @@
         <MenuItem :routerTo='"/contact"' :routeName='"Contact"'/>
       </div>
       <div class="md:hidden flex flex-1 justify-end text-2xl">
-        <button class="transition-all" v-if="!showMobileMenu" @click="showMobileMenu = true">
+        <button class="transition-all" v-if="!showMobileMenu" @click="showMobileMenu = true" aria-label="Open Menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="stroke-2 md:stroke-1 h-6 w-6 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <button class="transition-all" v-else @click="showMobileMenu = false">
+        <button class="transition-all" v-else @click="showMobileMenu = false" aria-label="Close Menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="stroke-2 md:stroke-1 h-6 w-6 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -39,7 +39,6 @@
               <div @click="showSubmenu = true"
                 class="flex items-center relative font-himalaya mx-2 py-2 md:mx-4 md:border-b border-transparent hover:border-white lowercase cursor-pointer">
                 photography
-                <!-- margin top-ot atirni 0.35 remre -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="animation-bounce-right-long stroke-2 md:stroke-1 mt-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
