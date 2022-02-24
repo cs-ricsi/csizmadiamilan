@@ -4,9 +4,9 @@
         <img class="absolute inset-0 object-cover min-h-screen h-auto w-full"
             src="@/assets/photos/automotive/milan-csizmadia-photography-videography-automotive-motorsport-racing-lifestyle-sports-budapest-hungary-europe-worldwide-ferrari-red-sportscar-hypercar-trackday-milancsizmadia-2.jpg"
             alt="">
-        <div class="relative h-48 md:h-96 lg:h-screen"></div>
+        <div class="relative h-fifty md:h-seventy lg:h-screen mb-72 md:mb-48 lg:mb-20"></div>
         <div class="relative">
-            <section class="pb-1 md:pb-2 lg:pb-4 pt-72 md:pt-48 lg:pt-4 px-2 md:px-4 lg:px-8">
+            <section class="pb-1 md:pb-2 lg:pb-4 px-2 md:px-4 lg:px-8">
                 <div class="flex flex-1 items-center">
                     <div class="w-2/3">
                         <LazyImgLoader
@@ -59,7 +59,7 @@
                 </div>
             </section>
             <section class="py-1 md:py-2 lg:py-4">
-                <div class="w-full h-thirty md:h-sixty lg:h-ninety">
+                <div class="w-full h-auto">
                     <LazyImgLoader
                         :imgSrc='require("@/assets/photos/automotive/milan-csizmadia-photography-videography-automotive-motorsport-racing-lifestyle-sports-budapest-hungary-europe-worldwide-bmw-m6-gt3-racingcar-belgium-spa-francorchamps-endurance-total-24h-milancsizmadia.com.jpg")'
                         :imgAlt='""' />
@@ -92,7 +92,7 @@
                 </div>
             </section>
             <section class="pt-1 md:pt-2 lg:pt-4">
-                <div class="w-full h-thirty md:h-sixty lg:h-ninety">
+                <div class="w-full h-auto">
                     <LazyImgLoader
                         :imgSrc='require("@/assets/photos/automotive/milan-csizmadia-photography-automotive-motorsport-racing-lifestyle-sports-europe-worldwide-lamborghini-huracan-gt3-blackbull-racing-team-spa-francorchamps-belgium-endurance-total-24h.jpg")'
                         :imgAlt='""' />

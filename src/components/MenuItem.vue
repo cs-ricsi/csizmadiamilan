@@ -1,16 +1,27 @@
 <template>
-    <router-link :to="routerTo"
-      class="relative font-himalaya mx-2 py-2 md:mx-4 md:border-b border-transparent hover:border-white
-        transition-all lowercase"
-      active-class="">
-      {{ routeName }}
-    </router-link>
+  <router-link :to="routerTo" @mouseenter="mouseOn = true" @mouseleave="mouseOn = false"
+    class="relative font-himalaya mx-2 py-2 md:mx-4 lowercase">
+    {{ routeName }}
+    <MenuUnderline :menu="routeName" :hover="mouseOn"/>
+  </router-link>
 </template>
 
 <script>
+import MenuUnderline from './MenuUnderline.vue'
 
 export default {
   name: 'MenuItem',
-  props: ['routerTo', 'routeName']
+  components: {
+    MenuUnderline
+  },
+  props: {
+    routerTo: String,
+    routeName: String
+  },
+  data () {
+    return {
+      mouseOn: false
+    }
+  }
 }
 </script>

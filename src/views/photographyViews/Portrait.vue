@@ -4,15 +4,15 @@
     <img class="absolute inset-0 object-cover min-h-screen h-auto w-full"
       src="../../assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-sunglasses-worldwide-classy-woman.jpg"
       alt="">
-    <div class="relative h-48 md:h-96 lg:h-screen"></div>
+    <div class="relative h-fifty md:h-seventy lg:h-screen mb-72 md:mb-48 lg:mb-20"></div>
     <div class="relative">
-      <section class="pb-2 md:pb-4 lg:pb-8 pt-72 md:pt-48 lg:pt-12">
-        <div class="relative w-full h-thirty md:h-sixty lg:h-eighty xl:h-ninety">
+      <section class="pb-2 md:pb-4 lg:pb-8">
+        <div class="relative w-full h-auto">
           <LazyImgLoader
-            :imgClass='"absolute object-cover h-full w-full"'
+            :imgClass='"object-cover h-full w-full"'
             :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-glasses-jeans-worldwide-classy-man-2.jpg")'
             :imgAlt='""' />
-          <div class="absolute h-full w-full flex flex-col items-end pr-2 md:pr-4 lg:pr-8">
+          <div class="absolute top-0 h-full w-full flex flex-col items-end pr-2 md:pr-4 lg:pr-8">
             <LazyImgLoader
               :imgClass='"flex-1 object-cover h-1/2 w-1/4 -mt-2 md:-mt-4 lg:-mt-8 pb-1 md:pb-2 lg:pb-4"'
               :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-glasses-jeans-worldwide-classy-man-3.jpg")'
@@ -25,12 +25,12 @@
         </div>
       </section>
       <section class="pt-2 md:pt-4 lg:pt-8">
-        <div class="relative w-full h-thirty md:h-sixty lg:h-eighty xl:h-ninety">
+        <div class="relative w-full h-auto">
           <LazyImgLoader
-            :imgClass='"absolute object-cover h-full w-full pl-20 md:pl-40 lg:pl-80"'
+            :imgClass='"object-contain h-full w-full pl-24 md:pl-48 lg:pl-96"'
             :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-worldwide-classy-woman.jpg")'
             :imgAlt='""' />
-          <div class="absolute h-full w-full flex flex-col items-start pl-2 md:pl-4 lg:pl-8">
+          <div class="absolute top-0 h-full w-full flex flex-col items-start pl-2 md:pl-4 lg:pl-8">
             <LazyImgLoader
               :imgClass='"flex-1 object-cover h-1/2 w-1/2 -mt-2 md:-mt-4 lg:-mt-8 pb-1 md:pb-2 lg:pb-4"'
               :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-worldwide-classy-woman-2.jpg")'
@@ -73,18 +73,20 @@
         </div>
       </section>
       <section class="-my-4 md:-my-8 lg:-my-16">
-        <div class="relative flex flex-1 items-center h-auto pl-2 md:pl-4 lg:pl-8 z-10">
-          <div class="w-1/4 h-full pr-1 md:pr-2 lg:pr-4">
+        <div class="relative flex items-center h-auto pl-2 md:pl-4 lg:pl-8 z-10">
+          <div class="flex-1 place-self-stretch pr-1 md:pr-2 lg:pr-4">
             <LazyImgLoader
+              :imgClass='"object-cover shadow-md h-full w-full"'
               :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-men-grappling.jpg")'
               :imgAlt='""' />
           </div>
-          <div class="w-1/4 h-full px-0.5 md:px-1 lg:px-2 mx-0.5 md:mx-1 lg:mx-2">
+          <div class="flex-1 place-self-stretch px-1 md:px-2 lg:px-4">
             <LazyImgLoader
+              :imgClass='"object-cover shadow-md h-full w-full"'
               :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-man.jpg")'
               :imgAlt='""' />
           </div>
-          <div class="w-2/4 h-full pl-1 md:pl-2 lg:pl-4">
+          <div class="flex-2 h-full w-full pl-1 md:pl-2 lg:pl-4">
             <LazyImgLoader
               :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-men-2.jpg")'
               :imgAlt='""' />
@@ -92,7 +94,7 @@
         </div>
       </section>
       <section class="">
-        <div class="w-full h-auto">
+        <div class="relative w-full h-auto">
           <LazyImgLoader
             :imgSrc='require("@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-sunglasses-worldwide-classy-woman-2.jpg")'
             :imgAlt='""' />

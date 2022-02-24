@@ -1,18 +1,18 @@
 <template>
     <div>
         <ScrollForMore />
-        <img class="absolute inset-0 object-cover min-h-screen h-auto w-full"
+        <img class="absolute inset-0 object-cover min-h-screen h-auto w-full -mt-24 lg:-mt-0"
             src="@/assets/photos/sport/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-wakeboard-worldwide-classy-man.jpg"
             alt="">
-        <div class="relative h-48 md:h-96 lg:h-screen"></div>
+        <div class="relative h-fifty md:h-seventy lg:h-screen mb-72 md:mb-48 lg:mb-20"></div>
         <div class="relative">
-          <section class="pt-72 md:pt-48 lg:pt-12">
-            <div class="relative w-full h-thirty md:h-eighty lg:h-screen">
+          <section class="">
+            <div class="relative w-full h-auto">
               <LazyImgLoader
-                :imgClass='"absolute object-cover h-full w-full"'
+                :imgClass='"object-cover h-full w-full"'
                 :imgSrc='require("@/assets/photos/sport/milan-csizmadia-photography-horse-polo-portrait-lifestyle-sports-budapest-hungary-europe-worldwide-event-elegant-milancsizmadia.jpg")'
                 :imgAlt='""' />
-              <div class="absolute h-full w-full flex flex-col items-start pl-2 md:pl-4 lg:pl-8">
+              <div class="absolute top-0 h-full w-full flex flex-col items-start pl-2 md:pl-4 lg:pl-8">
                 <LazyImgLoader
                   :imgClass='"flex-1 object-cover h-auto w-1/3 h-2/3 -mt-2 md:-mt-4 lg:-mt-8 pb-1 md:pb-2 lg:pb-4"'
                   :imgSrc='require("@/assets/photos/sport/milan-csizmadia-photography-horse-polo-portrait-lifestyle-sports-budapest-hungary-europe-worldwide-event-winner-team-milancsizmadia.jpg")'
@@ -100,13 +100,13 @@
             </div>
           </section>
           <section class="py-1 md:py-2 lg:py-4">
-            <div class="relative flex h-thirty md:h-eighty">
-              <div class="w-2/3 h-full mr-2 md:mr-4 lg:mr-8">
+            <div class="relative flex h-auto">
+              <div class="w-2/3 h-auto mr-2 md:mr-4 lg:mr-8">
                 <LazyImgLoader
                   :imgSrc='require("@/assets/photos/sport/milan-csizmadia-photography-videography-automotive-bmw-m4-gt4-trackday-hungaroring-motorsport-racing-livefast-lifestyle-sports-budapest-hungary-europe-pitlane-longexpo.jpg")'
                   :imgAlt='""' />
               </div>
-              <div class="w-1/3 h-full">
+              <div class="w-1/3 h-auto">
                 <LazyImgLoader
                   :imgSrc='require("@/assets/photos/sport/milan-csizmadia-photography-videography-automotive-bmw-m4-gt4-trackday-hungaroring-motorsport-racing-livefast-lifestyle-sports-budapest-hungary-europe-worldwide.jpg")'
                   :imgAlt='""' />
@@ -134,7 +134,7 @@
               </div>
             </div>
           </section>
-          <section class="py-1 md:py-2 lg:py-4">
+          <section class="pt-1 md:pt-2 lg:pt-4">
             <div class="w-full h-auto">
               <LazyImgLoader
                 :imgSrc='require("@/assets/photos/sport/milan-csizmadia-photography-automotive-pitlane-haupt-racing-motorsport-racing-lifestyle-sports-budapest-hungary-belgium-europe-worldwide-mercedes-amg-gt-spa-francorchamps-endurance-pitlane-total24h.jpg")'

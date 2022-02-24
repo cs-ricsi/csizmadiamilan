@@ -1,18 +1,10 @@
 <template>
   <div class="w-screen">
-    <!-- <div class="h-screen w-full bg-contain bg-scroll about-bg"
-      style="background-image: url('/src/assets/photos/about/BACKGROUND.jpg')">
-    </div> -->
-    <div class="bg fixed inset-0 bg-scroll">
-
-    </div>
-    <!-- <img class="absolute inset-0 object-cover min-h-screen h-auto w-full"
-      src="@/assets/photos/about/BACKGROUND.jpg"
-      alt=""> -->
-    <div class="flex flex-col items-center justify-center text-center md:text-lg font-himalaya relative h-sixty md:h-seventy lg:h-eighty">
+    <div class="bg fixed inset-0 bg-scroll bg-cover"></div>
+    <div class="flex flex-col items-center justify-center text-center text-xs md:text-lg font-himalaya relative h-sixty md:h-seventy lg:h-eighty">
       <div class="py-1 md:py-2 lg:py-4">
-        <FadeOutText :text="'Milan is a photographer and videographer based between Budapest, Hungary'" />
-        <FadeOutText :text="'and his hometown Szeged.'"/>
+        <FadeOutText :text="'Milan is a photographer and videographer based between'" />
+        <FadeOutText :text="'Budapest, Hungary and his hometown Szeged.'"/>
       </div>
       <div class="py-1 md:py-2 lg:py-4">
         <FadeOutText :text="'He loves animals and has a strong passion for cars, sports, skiing.'" />

@@ -1,11 +1,11 @@
 <template>
   <transition name="menu-from-top" mode="out-in">
     <img v-if="showMobileMenu" class="md:hidden fixed inset-0 object-cover h-screen w-full z-20 transition-all overflow-y-hidden"
-      src="../assets/photos/HAMBURGER_háttér.png"
+      src="../assets/photos/phone/milan-csizmadia-photography-videography-horse-polo-portrait-lifestyle-sports-budapest-hungary-europe-worldwide-event.jpg"
       alt="">
   </transition>
-  <nav class="fixed inset-x-0 px-2 md:px-4 lg:mx-8 py-2 md:py-4 lg:py-8 z-20 transition-all"
-    :class="{ 'text-white': !showMobileMenu, 'text-black': showMobileMenu }">
+  <nav class="fixed inset-x-0 top-0 px-2 md:px-4 lg:px-8 py-2 md:py-4 lg:py-8 z-20 transition-all"
+    :class="{ 'text-white fade-bg': !showMobileMenu, 'text-black': showMobileMenu }">
     <div class="flex">
       <router-link to="/" class="transition duration-600 ease-in-out">
         <div class="flex-col flex-1 flex-no-wrap font-anton justify-start transition-all">
@@ -15,7 +15,6 @@
       </router-link>
       <div class="hidden md:flex flex-1 justify-end items-center text-lg">
         <MenuItemWithSubMenu :routeName='"Photography"'/>
-        <MenuItem :routerTo='"/videography"' :routeName='"Video/motion"'/>
         <MenuItem :routerTo='"/about"' :routeName='"About"'/>
         <MenuItem :routerTo='"/contact"' :routeName='"Contact"'/>
       </div>
@@ -45,7 +44,6 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <MenuItem :routerTo='"/videography"' :routeName='"Video/motion"'/>
               <MenuItem :routerTo='"/about"' :routeName='"About"'/>
               <MenuItem :routerTo='"/contact"' :routeName='"Contact"'/>
             </div>
@@ -101,6 +99,26 @@ export default {
 </script>
 
 <style scoped>
+
+  .fade-bg {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.812) 0%,
+      rgba(0, 0, 0, 0.804) 2%,
+      rgba(0, 0, 0, 0.792) 9%,
+      rgba(0, 0, 0, 0.738) 19%,
+      rgba(0, 0, 0, 0.541) 34%,
+      rgba(0, 0, 0, 0.382) 47%,
+      rgba(0, 0, 0, 0.278) 56.5%,
+      rgba(0, 0, 0, 0.194) 65%,
+      rgba(0, 0, 0, 0.126) 73%,
+      rgba(0, 0, 0, 0.075) 80.2%,
+      rgba(0, 0, 0, 0.042) 86.1%,
+      rgba(0, 0, 0, 0.021) 91%,
+      rgba(0, 0, 0, 0.008) 95.2%,
+      rgba(0, 0, 0, 0.002) 98.2%,
+      transparent 100%);
+  }
 
   .animation-bounce-left {
     animation: bounce-left 1s infinite;

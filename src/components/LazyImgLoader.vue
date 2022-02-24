@@ -21,7 +21,7 @@ export default {
     },
     lazyImgOptions: {
       root: document.querySelector('#scrollArea'),
-      rootMargin: '50px',
+      rootMargin: null,
       threshold: 0.0
     },
     imgSrc: String,

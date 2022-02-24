@@ -1,10 +1,12 @@
 <template>
-  <div class="relative flex flex-col h-screen text-white scroll-smooth"
+  <div class="relative h-screen text-white scroll-smooth"
     :class="{'overflow-hidden': this.$route.meta.overflowHidden}">
     <Nav />
     <router-view v-slot="{ Component }">
-      <transition name="main-router-anim">
-        <component :is="Component" :key="$route.fullPath" />
+      <transition name="main-router-anim" mode="out-in">
+        <div :key="$route.fullPath">
+          <component :is="Component" />
+        </div>
       </transition>
     </router-view>
   </div>
@@ -43,32 +45,30 @@ export default {
   }
 
   .main-router-anim-enter-active {
-  animation: pagecome .6s;
-  animation-delay: .6s;
-  opacity: 0;
+  animation: pagecome .6s ease-in-out;
   }
   .main-router-anim-leave-active {
-  animation: pagego .6s;
+  animation: pagego .6s ease-in-out;
   }
 
   @keyframes pagego {
-  from {
-      transform: translatex(0);
+    from {
+      transform: translatey(0);
       opacity: 1;
-  }
-  to {
-      transform: translatex(-250px);
+    }
+    to {
+      transform: translatey(-40%);
       opacity: 0;
-  }
+    }
   }
   @keyframes pagecome {
-  from {
-      transform: translatex(350px);
+    from {
+      transform: translatey(30%);
       opacity: 0;
-  }
-  to {
-      transform: translatex(0);
+    }
+    to {
+      transform: translatey(0);
       opacity: 1;
-  }
+    }
   }
 </style>
