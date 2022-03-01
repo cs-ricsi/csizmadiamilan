@@ -1,8 +1,11 @@
 <template>
-  <router-link :to="routerTo" @mouseenter="mouseOn = true" @mouseleave="mouseOn = false"
-    class="relative font-himalaya mx-2 py-1 lg:py-2 md:mx-4 lowercase text-inherit hover:text-inherit active:text-inherit focus:text-inherit">
+  <router-link
+    :to="routerTo"
+    @mouseenter="mouseOn = true"
+    @mouseleave="mouseOn = false"
+    class="text-inherit hover:text-inherit active:text-inherit focus:text-inherit relative mx-2 py-1 font-himalaya lowercase md:mx-4 lg:py-2">
     {{ routeName }}
-    <MenuUnderline v-show="showUnderline" :menu="routeName" :hover="mouseOn"/>
+    <MenuUnderline v-show="showUnderline" :menu="routeName" :hover="mouseOn" />
   </router-link>
 </template>
 
@@ -22,13 +25,13 @@ export default {
       default: true
     }
   },
-  data () {
+  data() {
     return {
       mouseOn: false
     }
   },
   watch: {
-    $route (to, from) {
+    $route(to, from) {
       this.mouseOn = false
     }
   }

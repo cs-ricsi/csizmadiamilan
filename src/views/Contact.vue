@@ -1,21 +1,44 @@
 <template>
-  <div class="relative w-screen h-screen">
-    <div class="bg fixed inset-0 bg-scroll bg-cover"></div>
-    <div class="relative h-full my-auto">
-      <div class="flex flex-row h-full w-full justify-center items-center px-1 md:px-2 -ml-12 md:-ml-0">
+  <div class="relative h-screen w-screen">
+    <div class="bg fixed inset-0 bg-cover bg-scroll"></div>
+    <div class="relative my-auto h-full">
+      <div
+        class="-ml-12 flex h-full w-full flex-row items-center justify-center px-1 md:-ml-0 md:px-2">
         <div class="h-auto max-h-fifty max-w-fifty">
           <LazyImgLoader
-            :imgClass='"object-contain shadow-md bg-grey-500"'
-            :imgSrc='require("@/assets/photos/contact/milan-csizmadia-photography-videography-automotive-portrait-lifestyle-sports-budapest-hungary-europe-worldwide-milancsizmadia-2.jpg")'
-            :imgAlt='""' />
+            :imgClass="'object-cover shadow-md bg-grey-500 w-full h-auto'"
+            :imgSrc="
+              require('@/assets/photos/contact/milan-csizmadia-photography-videography-automotive-portrait-lifestyle-sports-budapest-hungary-europe-worldwide-milancsizmadia-2.jpg')
+            "
+            :imgAlt="''" />
         </div>
-        <div class="flex flex-col justify-center font-himalaya text-sm md:text-lg space-y-2 -ml-4 z-10">
-          <p class="font-anton text-2xl md:text-4xl">GET IN TOUCH</p>
-          <a class="select-all" href="mailto:hello@milancsizmadia.com">hello@milancsizmadia.com</a>
+        <div
+          class="z-10 -ml-4 flex flex-col justify-center space-y-2 font-himalaya text-base md:text-lg lg:text-xl">
+          <p class="font-anton text-3xl md:text-4xl lg:text-5xl">
+            GET IN TOUCH
+          </p>
+          <a class="select-all" href="mailto:hello@milancsizmadia.com"
+            >hello@milancsizmadia.com</a
+          >
           <a class="select-all" href="tel:+36703273200">+36 70 3273 200</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/milancsizmadia/">instagram</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/milan-csizmadia-5254201a2/">linkedin</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UC3I2cEFXVrCFG12jc9RsGuw">youtube</a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/milancsizmadia/"
+            >instagram</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://linkedin.com/in/milan-csizmadia-5254201a2/"
+            >linkedin</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://youtube.com/channel/UC3I2cEFXVrCFG12jc9RsGuw"
+            >youtube</a
+          >
         </div>
       </div>
     </div>
@@ -34,8 +57,7 @@ export default {
 </script>
 
 <style scoped>
-
 .bg {
-  background-image: url("../assets/photos/contact/WEB_CONTACT.jpg");
+  background-image: url('../assets/photos/contact/WEB_CONTACT.jpg');
 }
 </style>

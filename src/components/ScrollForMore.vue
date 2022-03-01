@@ -1,20 +1,20 @@
 <template>
-    <div class="absolute h-screen w-full z-10">
-        <div class="absolute flex flex-1 invisible lg:visible bottom-0 w-full pb-8 animate-bounce font-himalaya text-3xl transition-all"
-            :style="scrollOpacity">
-            <p class="mx-auto">scroll for more</p>
-        </div>
+  <div class="absolute z-10 h-screen w-full">
+    <div
+      class="invisible absolute bottom-0 flex w-full flex-1 animate-bounce pb-8 font-himalaya text-3xl transition-all lg:visible"
+      :style="scrollOpacity">
+      <p class="mx-auto">scroll for more</p>
     </div>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: 'ScrollForMore',
-  created () {
+  created() {
     window.addEventListener('scroll', this.scrollHandler)
   },
-  data () {
+  data() {
     return {
       scrollOpacity: {
         opacity: 1
@@ -22,8 +22,11 @@ export default {
     }
   },
   methods: {
-    scrollHandler (e) {
-      this.scrollOpacity.opacity = Math.round((1 - e.target.scrollingElement.scrollTop / 1000 * 2.5) * 10) / 10
+    scrollHandler(e) {
+      this.scrollOpacity.opacity =
+        Math.round(
+          (1 - (e.target.scrollingElement.scrollTop / 1000) * 2.5) * 10
+        ) / 10
     }
   }
 }

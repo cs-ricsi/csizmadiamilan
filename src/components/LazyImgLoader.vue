@@ -1,9 +1,9 @@
 <template>
-    <v-lazy-image
-        :class="imgClass"
-        :src="imgSrc"
-        :alt="imgAlt"
-        :intersection-options="lazyImgOptions"/>
+  <v-lazy-image
+    :class="imgClass"
+    :src="imgSrc"
+    :alt="imgAlt"
+    :intersection-options="lazyImgOptions" />
 </template>
 
 <script>
@@ -31,13 +31,13 @@ export default {
 </script>
 
 <style scoped>
-  .v-lazy-image {
-    opacity: 0;
-    transform: translateY(25%);
-    transition: all 0.4s ease;
-  }
-  .v-lazy-image-loaded {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+.v-lazy-image {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: all 0.4s ease;
+}
+.v-lazy-image-loaded {
+  opacity: 1;
+  transform: translateY(0%);
+}
 </style>

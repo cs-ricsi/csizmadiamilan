@@ -1,7 +1,7 @@
 <template>
-    <p class="fade-out transition-all">
-        {{ text }}
-    </p>
+  <p class="fade-out transition-all">
+    {{ text }}
+  </p>
 </template>
 
 <script>
