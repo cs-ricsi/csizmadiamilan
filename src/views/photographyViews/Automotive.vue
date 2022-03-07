@@ -95,7 +95,7 @@
               "
               :imgAlt="''" />
           </div>
-          <div class="mg:pl-2 w-1/2 pl-1 lg:pl-4">
+          <div class="w-1/2 pl-1 md:pl-2 lg:pl-4">
             <LazyImgLoader
               :imgSrc="
                 require('@/assets/photos/automotive/milan-csizmadia-photography-videography-automotive-classic-lamborghini-diablo-gold-trackday-spa-francorchamps-motorsport-racing-livefast-lifestyle-sports-budapest-hungary-europe-worldwide.jpg')

@@ -51,6 +51,15 @@ const routes = [
         /* webpackChunkName: "sports" */ '../views/photographyViews/Sports.vue'
       ),
     meta: { title: 'Sports', subMenuOf: 'Photography' }
+  },
+  {
+    path: '/photography/food-catering',
+    name: 'Food',
+    component: () =>
+      import(
+        /* webpackChunkName: "sports" */ '../views/photographyViews/Food.vue'
+      ),
+    meta: { title: 'Food/Catering', subMenuOf: 'Photography' }
   }
   // {
   //   path: '/videography',

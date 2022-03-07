@@ -26,6 +26,11 @@
           class="py-1 opacity-70 hover:opacity-100">
           sports
         </router-link>
+        <router-link
+          :to="'/photography/food-catering'"
+          class="py-1 opacity-70 hover:opacity-100">
+          food / catering
+        </router-link>
       </div>
     </transition>
   </div>

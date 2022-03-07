@@ -62,32 +62,36 @@
       </section>
       <section
         class="-mt-4 px-2 pb-1 md:-mt-8 md:px-4 md:pb-2 lg:-mt-16 lg:px-8 lg:pb-4">
-        <div class="flex flex-1 items-center">
-          <div class="w-1/2">
+        <div class="flex items-center">
+          <div class="-m-px h-auto w-1/2">
             <LazyImgLoader
+              :imgClass="'object-cover shadow-md h-full w-full'"
               :imgSrc="
                 require('@/assets/photos/sport/milan-csizmadia-photography-videography-automotive-motorsport-racing-lifestyle-sports-budapest-hungary-europe-worldwide-porsche-gt2-rs-zengomotorsport-sportscar-trackday-milancsizmadia.jpg')
               "
               :imgAlt="''" />
           </div>
-          <div class="w-1/2">
+          <div class="-m-px h-auto w-1/2">
             <LazyImgLoader
+              :imgClass="'object-cover shadow-md h-full w-full'"
               :imgSrc="
                 require('@/assets/photos/sport/milan-csizmadia-photography-videography-plane-motorsport-airshow-lifestyle-sports-budapest-hungary-europe-worldwide-moon-milancsizmadia.jpg')
               "
               :imgAlt="''" />
           </div>
         </div>
-        <div class="flex flex-1 items-center">
-          <div class="w-1/2">
+        <div class="flex items-center">
+          <div class="-m-px h-auto w-1/2">
             <LazyImgLoader
+              :imgClass="'object-cover shadow-md h-full w-full'"
               :imgSrc="
                 require('@/assets/photos/sport/milan-csizmadia-photography-videography-ktm-motorsport-racing-lifestyle-sports-trackday-budapest-hungary-europe-grand-prix-live-fast-worldwide.jpg')
               "
               :imgAlt="''" />
           </div>
-          <div class="w-1/2">
+          <div class="-m-px h-auto w-1/2">
             <LazyImgLoader
+              :imgClass="'object-cover shadow-md h-full w-full'"
               :imgSrc="
                 require('@/assets/photos/sport/milan-csizmadia-photography-videography-automotive-motorsport-racing-lifestyle-sports-endurance-belgium-europe-total24h-mercedes-amg-gt-hauptracing-spafrancorchamps-milancsizmadia.jpg')
               "

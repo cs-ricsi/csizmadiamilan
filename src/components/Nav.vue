@@ -110,6 +110,10 @@
                 :showUnderline="false"
                 :routerTo="'/photography/sports'"
                 :routeName="'sports'" />
+              <MenuItem
+                :showUnderline="false"
+                :routerTo="'/photography/food-catering'"
+                :routeName="'food / catering'" />
             </div>
             <div class="flex flex-1 items-center justify-center">
               <div
