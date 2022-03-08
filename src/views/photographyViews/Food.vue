@@ -2,7 +2,9 @@
   <div>
     <ScrollForMore />
     <img
-      class="absolute inset-0 h-auto min-h-screen w-full object-cover"
+      class="absolute inset-0 h-auto min-h-eighty w-full object-cover"
+      width="2375"
+      height="1583"
       src="@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-hamburger-burger-catering-restaurant-budapest-hungary-europe-gastronomy-milancsizmadia.jpg"
       alt="" />
     <div
@@ -14,6 +16,8 @@
           :imgSrc="
             require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-2-2.jpg')
           "
+          :imgWidth="'2031'"
+          :imgHeight="'1354'"
           :imgAlt="''" />
       </div>
     </section>
@@ -24,6 +28,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-bagel-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-2.jpg')
             "
+            :imgWidth="'1097'"
+            :imgHeight="'1371'"
             :imgAlt="''" />
         </div>
         <div class="mg:pl-2 w-1/2 pl-1 lg:pl-4">
@@ -31,6 +37,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-4-2.jpg')
             "
+            :imgWidth="'1200'"
+            :imgHeight="'1500'"
             :imgAlt="''" />
         </div>
       </div>
@@ -40,6 +48,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-bagel-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-3.jpg')
             "
+            :imgWidth="'1099'"
+            :imgHeight="'1374'"
             :imgAlt="''" />
         </div>
         <div class="h-auto w-1/2 pl-1 md:pl-2 lg:pl-4">
@@ -47,6 +57,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-bagel-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia.jpg')
             "
+            :imgWidth="'1221'"
+            :imgHeight="'1526'"
             :imgAlt="''" />
         </div>
       </div>
@@ -57,6 +69,8 @@
           :imgSrc="
             require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia.jpg')
           "
+          :imgWidth="'2354'"
+          :imgHeight="'1569'"
           :imgAlt="''" />
       </div>
     </section>
@@ -68,6 +82,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-4.jpg')
             "
+            :imgWidth="'1435'"
+            :imgHeight="'957'"
             :imgAlt="''" />
         </div>
         <div class="h-full w-1/2 pl-1 md:pl-2 lg:pl-4">
@@ -75,6 +91,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-3.jpg')
             "
+            :imgWidth="'1200'"
+            :imgHeight="'800'"
             :imgAlt="''" />
         </div>
       </div>
@@ -85,6 +103,8 @@
           :imgSrc="
             require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-5.jpg')
           "
+          :imgWidth="'1877'"
+          :imgHeight="'1251'"
           :imgAlt="''" />
       </div>
     </section>
@@ -95,6 +115,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-2.jpg')
             "
+            :imgWidth="'1200'"
+            :imgHeight="'800'"
             :imgAlt="''" />
         </div>
         <div class="mg:pl-2 w-1/2 pl-1 lg:pl-4">
@@ -102,6 +124,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-6.jpg')
             "
+            :imgWidth="'662'"
+            :imgHeight="'441'"
             :imgAlt="''" />
         </div>
       </div>
@@ -111,6 +135,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-hamburger-burger-catering-restaurant-budapest-hungary-europe-gastronomy-milancsizmadia-2.jpg')
             "
+            :imgWidth="'960'"
+            :imgHeight="'1200'"
             :imgAlt="''" />
         </div>
         <div class="h-auto w-1/2 pl-1 md:pl-2 lg:pl-4">
@@ -118,6 +144,8 @@
             :imgSrc="
               require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-catering-restaurant-budapest-hungary-europe-gastronomy-milancsizmadia-2.jpg')
             "
+            :imgWidth="'1600'"
+            :imgHeight="'2000'"
             :imgAlt="''" />
         </div>
       </div>
@@ -128,6 +156,8 @@
           :imgSrc="
             require('@/assets/photos/food/milan-csizmadia-photography-foodphotography-food-coffee-catering-restaurant-cafe-budapest-hungary-europe-gastronomy-milancsizmadia-3-2.jpg')
           "
+          :imgWidth="'2018'"
+          :imgHeight="'1345'"
           :imgAlt="''" />
       </div>
     </section>

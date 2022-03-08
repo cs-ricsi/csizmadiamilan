@@ -2,7 +2,9 @@
   <div>
     <ScrollForMore />
     <img
-      class="absolute inset-0 h-auto min-h-screen w-full object-cover"
+      class="absolute inset-0 h-auto min-h-eighty w-full object-cover"
+      width="2267"
+      height="1814"
       src="../../assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-sunglasses-worldwide-classy-woman.jpg"
       alt="" />
     <div
@@ -15,6 +17,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-glasses-jeans-worldwide-classy-man-2.jpg')
             "
+            :imgWidth="'2046'"
+            :imgHeight="'1169'"
             :imgAlt="''" />
           <div
             class="absolute top-0 flex h-full w-full flex-col items-end pr-2 md:pr-4 lg:pr-8">
@@ -23,12 +27,16 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-glasses-jeans-worldwide-classy-man-3.jpg')
               "
+              :imgWidth="'781'"
+              :imgHeight="'976'"
               :imgAlt="''" />
             <LazyImgLoader
               :imgClass="'flex-1 object-cover h-1/2 w-1/4 -mb-2 md:-mb-4 lg:-mb-8 pt-1 md:pt-2 lg:pt-4'"
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-glasses-jeans-worldwide-classy-man.jpg')
               "
+              :imgWidth="'788'"
+              :imgHeight="'985'"
               :imgAlt="''" />
           </div>
         </div>
@@ -40,6 +48,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-worldwide-classy-woman.jpg')
             "
+            :imgWidth="'2340'"
+            :imgHeight="'1560'"
             :imgAlt="''" />
           <div
             class="absolute top-0 flex h-full w-full flex-col items-start pl-2 md:pl-4 lg:pl-8">
@@ -48,12 +58,16 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-worldwide-classy-woman-2.jpg')
               "
+              :imgWidth="'926'"
+              :imgHeight="'617'"
               :imgAlt="''" />
             <LazyImgLoader
               :imgClass="'flex-1 object-cover h-1/2 w-1/2 -mb-2 md:-mb-4 lg:-mb-8 pt-1 md:pt-2 lg:pt-4 z-10'"
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-boots-worldwide-classy-woman.jpg')
               "
+              :imgWidth="'1004'"
+              :imgHeight="'669'"
               :imgAlt="''" />
           </div>
         </div>
@@ -64,6 +78,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-sunglasses-black-and-white-worldwide-classy-man-2.jpg')
             "
+            :imgWidth="'2633'"
+            :imgHeight="'1756'"
             :imgAlt="''" />
         </div>
       </section>
@@ -75,6 +91,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-worldwide-classy-girl.jpg')
             "
+            :imgWidth="'1782'"
+            :imgHeight="'2228'"
             :imgAlt="''" />
         </div>
       </section>
@@ -84,6 +102,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-f1-formula1-esports-mclaren-daniel-bereznay.jpg')
             "
+            :imgWidth="'2233'"
+            :imgHeight="'1489'"
             :imgAlt="''" />
         </div>
       </section>
@@ -95,6 +115,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-men.jpg')
             "
+            :imgWidth="'2112'"
+            :imgHeight="'1408'"
             :imgAlt="''" />
         </div>
       </section>
@@ -107,6 +129,8 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-men-grappling.jpg')
               "
+              :imgWidth="'829'"
+              :imgHeight="'1036'"
               :imgAlt="''" />
           </div>
           <div class="flex-1 place-self-stretch px-1 md:px-2 lg:px-4">
@@ -115,6 +139,8 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-man.jpg')
               "
+              :imgWidth="'972'"
+              :imgHeight="'1215'"
               :imgAlt="''" />
           </div>
           <div class="h-full w-full flex-2 pl-1 md:pl-2 lg:pl-4">
@@ -122,6 +148,8 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-faceoff-black-and-white-worldwide-bjj-classy-men-2.jpg')
               "
+              :imgWidth="'1500'"
+              :imgHeight="'1000'"
               :imgAlt="''" />
           </div>
         </div>
@@ -132,6 +160,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-szeged-sunglasses-worldwide-classy-woman-2.jpg')
             "
+            :imgWidth="'2206'"
+            :imgHeight="'1471'"
             :imgAlt="''" />
         </div>
       </section>
@@ -142,6 +172,8 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-wakeboard-worldwide-classy-man.jpg')
               "
+              :imgWidth="'1090'"
+              :imgHeight="'727'"
               :imgAlt="''" />
           </div>
           <div class="h-full w-1/2 pl-1 md:pl-2 lg:pl-4">
@@ -149,6 +181,8 @@
               :imgSrc="
                 require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-glasses-studio-worldwide-classy-man.jpg')
               "
+              :imgWidth="'1200'"
+              :imgHeight="'800'"
               :imgAlt="''" />
           </div>
         </div>
@@ -159,6 +193,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-barbershop-black-and-white-worldwide-classy-man-2.jpg')
             "
+            :imgWidth="'2496'"
+            :imgHeight="'1664'"
             :imgAlt="''" />
         </div>
       </section>
@@ -168,6 +204,8 @@
             :imgSrc="
               require('@/assets/photos/portrait/milan-csizmadia-photography-portrait-lifestyle-budapest-hungary-europe-photographer-freelance-body-builder-worldwide-classy-man.jpg')
             "
+            :imgWidth="'1946'"
+            :imgHeight="'2432'"
             :imgAlt="''" />
         </div>
       </section>

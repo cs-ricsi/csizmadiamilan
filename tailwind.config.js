@@ -29,7 +29,8 @@ module.exports = {
         fifty: '50vh'
       },
       minHeight: {
-        fifty: '50vh'
+        fifty: '50vh',
+        eighty: '80vh'
       },
       maxWidth: {
         fifty: '50vh'

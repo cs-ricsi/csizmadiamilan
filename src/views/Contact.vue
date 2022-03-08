@@ -5,10 +5,10 @@
       <div
         class="-ml-12 flex h-full w-full flex-row items-center justify-center px-1 md:-ml-0 md:px-2">
         <div
-          class="h-auto max-h-fifty max-w-fifty"
+          class="flex max-h-fifty max-w-fifty justify-center"
           style="width: 540px; height: 540px">
           <LazyImgLoader
-            :imgClass="'object-cover shadow-md bg-grey-500 w-full h-auto'"
+            :imgClass="'object-contain shadow-md bg-grey-500 w-full h-auto'"
             :imgSrc="
               require('@/assets/photos/contact/milan-csizmadia-photography-videography-automotive-portrait-lifestyle-sports-budapest-hungary-europe-worldwide-milancsizmadia-2.jpg')
             "
