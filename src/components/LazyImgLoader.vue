@@ -1,8 +1,10 @@
 <template>
   <v-lazy-image
-    :class="imgClass"
     :src="imgSrc"
+    :width="imgWidth"
+    :height="imgHeight"
     :alt="imgAlt"
+    :class="imgClass"
     :intersection-options="lazyImgOptions" />
 </template>
 
@@ -19,6 +21,8 @@ export default {
       type: String,
       default: 'object-cover shadow-md h-full w-full bg-grey-500'
     },
+    imgWidth: String,
+    imgHeight: String,
     lazyImgOptions: {
       root: document.querySelector('#scrollArea'),
       rootMargin: null,

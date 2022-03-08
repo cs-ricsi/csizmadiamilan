@@ -57,7 +57,7 @@ const routes = [
     name: 'Food',
     component: () =>
       import(
-        /* webpackChunkName: "sports" */ '../views/photographyViews/Food.vue'
+        /* webpackChunkName: "food-catering" */ '../views/photographyViews/Food.vue'
       ),
     meta: { title: 'Food/Catering', subMenuOf: 'Photography' }
   }

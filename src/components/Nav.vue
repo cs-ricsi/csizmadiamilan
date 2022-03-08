@@ -17,10 +17,10 @@
         <div
           class="flex-no-wrap mx-2 flex-1 flex-col justify-start font-anton transition-all md:mx-4">
           <p class="pr-2 text-xl md:text-2xl lg:text-3xl">MILAN</p>
-          <p class="text-xl md:text-2xl lg:text-3xl">CSIZMADIA</p>
+          <p class="-mt-1 text-xl md:text-2xl lg:text-3xl">CSIZMADIA</p>
         </div>
       </router-link>
-      <div class="hidden flex-1 items-center justify-end text-xl md:flex">
+      <div class="hidden flex-1 items-center justify-end text-2xl md:flex">
         <MenuItemWithSubMenu :routeName="'Photography'" />
         <MenuItem :routerTo="'/about'" :routeName="'About'" />
         <MenuItem :routerTo="'/contact'" :routeName="'Contact'" />
